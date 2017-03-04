@@ -5,11 +5,11 @@ const { shape, string } = React.PropTypes
 const Details = React.createClass({
   propTypes: {
     show: shape({
-      title: string,
-      year: string,
-      poster: string,
-      trailer: string,
-      descriptions: string
+      title: string.isRequired,
+      year: string.isRequired,
+      poster: string.isRequired,
+      trailer: string.isRequired,
+      descriptions: string.isRequired
     })
   },
   render () {

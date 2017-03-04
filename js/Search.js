@@ -6,8 +6,8 @@ const { arrayOf, shape, string } = React.PropTypes
 const Search = React.createClass({
   propTypes: {
     shows: arrayOf(shape({
-      title: string,
-      description: string
+      title: string.isRequired,
+      description: string.isRequired
     }))
   },
   getInitialState () {
